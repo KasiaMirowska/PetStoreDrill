@@ -1,4 +1,20 @@
+
 'use strict'
+
+
+
+export default class PetStore {
+    constructor(pets){
+        this.pets = petStore.pets;
+    }
+
+    searchForPet(){
+        this.adoptablePets = this.pets.filter(pet => pet.adopted === false);
+        console.log(this.adoptablePets)
+        return this.adoptablePets;
+    }
+    
+}
 
 const petStore = {
     pets: [
@@ -20,9 +36,3 @@ const petStore = {
         {petName: 'Champ', adopted: false}
     ]
 }
-
-function findPet(pets) {
-    let adoptablePets = pets.filter(pet => pet.adopted === false);
-    return adoptablePets;
-}
-console.log(findPet(petStore.pets));
