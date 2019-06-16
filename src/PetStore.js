@@ -10,7 +10,6 @@ export default class PetStore {
 
     searchForPet(){
         this.adoptablePets = this.pets.filter(pet => pet.adopted === false);
-        console.log(this.adoptablePets)
         return this.adoptablePets;
     }
     

@@ -28,9 +28,12 @@ export default class PetDisplay {
     }
    
     handleList(){
-        const list = this.generateList();
+       
         $('#search').on('click', e => {
             e.preventDefault();
+            this.filterPets();
+            const list = this.generateList();
+            console.log(this.list)
             $('.display-list').html(list);
         })
     }

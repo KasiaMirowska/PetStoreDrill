@@ -7,7 +7,6 @@ function main() {
   let display = new PetDisplay();
   display.handleList();
   display.handleAdoptionClick();
-  console.log(display)
 }
 
 $(main);
