@@ -2,7 +2,6 @@
 
 import $ from 'jquery';
 import PetStore from './PetStore'
-
 import PetDisplay from './PetDisplay';
 
 function main() {
@@ -18,6 +17,7 @@ petList.searchForPet();
 let display = new PetDisplay();
 display.generateList();
 display.handleList();
+display.handleAdoptionClick();
 console.log(display);
 
 

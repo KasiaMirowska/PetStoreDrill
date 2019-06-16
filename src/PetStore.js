@@ -1,7 +1,7 @@
 
 'use strict'
 
-
+import cuid from 'cuid'
 
 export default class PetStore {
     constructor(pets){
@@ -18,21 +18,21 @@ export default class PetStore {
 
 const petStore = {
     pets: [
-        {petName: 'Cinna', adopted: false}, 
-        {petName: 'Myszka', adopted: true}, 
-        {petName: 'Leo', adopted: false}, 
-        {petName: 'Kelti', adopted: true}, 
-        {petName: 'Franky', adopted: false}, 
-        {petName: 'Muffin', adopted: false}, 
-        {petName: 'Fluffy', adopted:true}, 
-        {petName: 'Berniska', adopted: false},  
-        {petName: 'Puszek', adopted: false}, 
-        {petName: 'Zuzia', adopted: false}, 
-        {petName: 'Kedji', adopted: false}, 
-        {petName: 'Scout', adopted: false}, 
-        {petName: 'Roger', adopted: false}, 
-        {petName: 'Humphrey', adopted: false}, 
-        {petName: 'Ciapek', adopted: false}, 
-        {petName: 'Champ', adopted: false}
+        {id: cuid(), petName: 'Cinna', adopted: false}, 
+        {id: cuid(), petName: 'Myszka', adopted: true}, 
+        {id: cuid(), petName: 'Leo', adopted: false}, 
+        {id: cuid(), petName: 'Kelti', adopted: true}, 
+        {id: cuid(), petName: 'Franky', adopted: false}, 
+        {id: cuid(), petName: 'Muffin', adopted: false}, 
+        {id: cuid(), petName: 'Fluffy', adopted:true}, 
+        {id: cuid(), petName: 'Berniska', adopted: false},  
+        {id: cuid(), petName: 'Puszek', adopted: false}, 
+        {id: cuid(), petName: 'Zuzia', adopted: false}, 
+        {id: cuid(), petName: 'Kedji', adopted: false}, 
+        {id: cuid(), petName: 'Scout', adopted: false}, 
+        {id: cuid(), petName: 'Roger', adopted: false}, 
+        {id: cuid(), petName: 'Humphrey', adopted: false}, 
+        {id: cuid(), petName: 'Ciapek', adopted: false}, 
+        {id: cuid(), petName: 'Champ', adopted: false}
     ]
 }
