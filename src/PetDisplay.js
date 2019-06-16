@@ -34,9 +34,12 @@ export default class PetDisplay {
             $('.display-list').html(list);
         })
     }
+    
     findById(id){
         return this.list.find(pet => pet.id === id)
     }
+    
+    
     handleAdoptionClick(){
         $('.display-list').on('click', '#adopt',e => {
             e.preventDefault();
